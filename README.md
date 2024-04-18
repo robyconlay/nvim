@@ -20,3 +20,14 @@ Steps
 
 ## Useful commands
 :messages shows errors
+
+view the currently mapped keys in Vim
+You can do that with the :map command. There are also other variants.
+
+:nmap for normal mode mappings
+:vmap for visual mode mappings
+:imap for insert mode mappings
+The above list is not complete. Typing :help map in Vim will give you more info.
+
+
+<C-o> go to previous cursor position
