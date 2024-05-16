@@ -4,6 +4,12 @@
 
 Can be installed with `sudo apt install ripgrep`
 
+### C++ compiler
+
+
+### Neovim installation
+
+
 ### LazyGit
 
 ```
@@ -20,7 +26,7 @@ https://www.geekbits.io/how-to-setup-nerd-fonts-in-windows/
 
 - clone repository sparsely: `git clone --filter=blob:none --sparse https://github.com/ryanoasis/nerd-fonts.git`
 - download a font from the website https://www.nerdfonts.com/font-downloads
-- put font in `patched-fonts` folder of cloned repo
+- put font in `patched-fonts` folder of cloned repo and unzip it
 - run powershell as administrator => .\install.ps1 <fontname>
 
 If powershell returns `error cannot be loaded because running scripts is disabled on this system.`, open powershell as Administrator and run this command `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
@@ -47,3 +53,11 @@ You can do that with the :map command. There are also other variants.
 The above list is not complete. Typing :help map in Vim will give you more info.
 
 <C-o> go to previous cursor position
+
+### Macro
+Start macro with `qa` (in this case register a)
+do your stuff
+Stop the macro with `q`
+apply the macro with `@a`
+apply last used macro with `@@`
+you can apply macro multiple times together with `20@a`
